@@ -34,6 +34,6 @@ public class Main {
 
 		Stream<String> fizzBuzz = chooseNonEmpty.zip(words, numbers);
 
-		fizzBuzz.limit(howMany(args)).forEachOrdered(System.out.println);
+		fizzBuzz.limit(howMany(args)).forEachOrdered(System.out::println);
 	}
 }
